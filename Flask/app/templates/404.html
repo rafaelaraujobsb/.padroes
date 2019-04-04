@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Error</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/AdminLTE.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/skins/_all-skins.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
+
+    <script src="{{ url_for('static', filename='plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
+
+
+    <script>
+        $(window).load(function () {
+            $("#load").fadeOut('slow');
+            $("#conteudo").delay(500).fadeTo("slow", 1);
+        });
+    </script>
+
+</head>
+
+<body class="">
+    <div class="wrapper">
+        <section class="content text-light-blue" style="text-align:center; padding-top:15rem">
+            <div class="error-page">
+                <h2 class="headline "> <b>404</b></h2>
+
+                <div class="error-content">
+                    <h2 style="text-size-adjust: 50em"><i class="fa fa-warning text-yellow"></i> <b>Oops!</b> A página
+                        não foi encontrada.</h2>
+
+                    <p>
+                        <a href="{{ url_for('api.index') }}"><i class="fa fa-home fa-3x"></i></a>
+                    </p>
+                </div>
+                <!-- /.error-content -->
+            </div>
+            <!-- /.error-page -->
+        </section>
+    </div>
+</body>
+
+</html>
