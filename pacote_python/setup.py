@@ -18,7 +18,7 @@ setup(
     packages=find_packages(exclude=['docs', 'tests']),
     python_requires='>=3.6.*',
     install_requires=[
-        'flask==1.1.1',
+        'flask==2.3.2',
         'loguru==0.3.2',
         'flasgger==0.9.3',
         'gunicorn==19.9.0',
