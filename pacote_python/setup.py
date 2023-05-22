@@ -22,7 +22,7 @@ setup(
         'loguru==0.3.2',
         'flasgger==0.9.3',
         'gunicorn==19.9.0',
-        'requests==2.22.0',
+        'requests==2.31.0',
         'jsonschema==2.6.0',
         'flask_restful==0.3.7',
         'beautifulsoup4==4.8.0',
